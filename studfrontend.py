@@ -26,6 +26,16 @@ TABLE_NAME = "studdatatbl"
 from flask import *
 import os
 import sqlite3
+
+con = sqlite3.connect("studdata.db")
+print("Database opened successfully")
+TABLE_NAME = "studdatatbl"
+
+con.execute(" CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL,\
+ email TEXT UNIQUE NOT NULL, address TEXT NOT NULL)")
+print("Table created successfully")
+con.close() 
+
 app = Flask(__name__)
 @app.route("/")
 def index():
