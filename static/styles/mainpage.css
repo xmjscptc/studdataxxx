@@ -1,5 +1,8 @@
-.header {
-    background-color: #565cad;
+body {
+    background-color: lightskyblue;
+    color: green;
+  }
+  
+  h1 {
     text-align: center;
-    padding: 20px;
   }
