@@ -3,8 +3,9 @@
  <head>  
      <title>Delete Student record</title>  
  </head>  
- <body>  
+ <body> 
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}"> 
  <h3>{{msg}}</h3>  
- <a href="/view">View List</a>  
+ <a href="/view"><input type="button" value="View Student List"/></a> 
  </body>  
  </html> 

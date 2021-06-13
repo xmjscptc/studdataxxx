@@ -3,7 +3,8 @@
  <head>  
      <title>delete Student record</title>  
  </head>  
- <body>  
+ <body> 
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}"> 
      <h3>Remove Student from the list</h3>  
  <form action="/deleterecord" method="post">   
  Employee Id <input type="text" name="id">  

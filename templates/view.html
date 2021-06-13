@@ -4,6 +4,7 @@
      <title>List</title>  
  </head>  
  <body>  
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
  <h3>Student Information</h3>   
  <table border=5>  
  <thead>  
@@ -22,6 +23,6 @@
  {% endfor %}   
  </table>  
  <br><br>  
- <a href="/">Go back to home page</a>  
+ <a href="/"><input type="button" value="Go back to home page"/></a>
  </body>  
  </html> 

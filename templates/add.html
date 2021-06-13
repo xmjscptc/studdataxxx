@@ -25,7 +25,8 @@
  <head>  
  <title>Add New Students</title>  
  </head>  
- <body>  
+ <body>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">  
   <h2>Student Information</h2>   
  <form action = "/savedetails" method="post">   
  <table>  
@@ -34,6 +35,7 @@
  <tr><td>Address</td><td><input type="text" name="address"></td></tr>  
  <tr><td><input type="submit" value="Submit"></td></tr>  
  </table>  
- </form>  
+ </form> 
+
  </body>  
  </html>  
